@@ -1,0 +1,72 @@
+h1 {
+    width: 100%;
+    height: 100%;
+    background-color:#333333;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+.row {
+    display: flex;
+    flex-flow: wrap;
+}
+
+
+.images {
+    background-color:#999999;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+}
+
+.verse {
+    width: 100%;
+    height: 100vh;
+    background-color:#333333;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    justify-content: center;
+    line-height: 50vh;
+
+
+}
+
+.caption {
+    display: block;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+
+.targetImage {
+    background-color:#999999;
+    border: solid 4px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.mainImage {
+    line-height: 30vh;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+a img {
+    opacity: 1;
+    cursor: pointer; 
+}
+
+a img:hover {
+    opacity: 0.3;
+}
+
+.mySlides {
+    width: 100%;
+}
+
+

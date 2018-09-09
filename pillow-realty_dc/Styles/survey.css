@@ -1,0 +1,36 @@
+@media (min-width: 576px) {
+    .container { font-size: 1rem; }
+}
+@media (min-width: 768px) {
+    .container { font-size: 1rem; }
+}
+@media (min-width: 992px) {
+    .container { font-size: 1.25rem; }
+}
+@media (min-width: 1200px) {
+    .container { font-size: 1.5rem; }
+}
+
+body {
+    background-color: #55C1E8;
+}
+img {
+    width: 30%;
+    height: 30%;
+    /* opacity: 0.8; */
+}
+.container { font-size: 1rem; }
+
+/* .google-maps {
+    position: relative;
+    padding-bottom: 75%; 
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+} */
