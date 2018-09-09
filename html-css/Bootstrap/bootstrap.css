@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+}
+
+.top {
+    display: flex;
+}
+
+.row {
+    margin-top: 5px;
+    background-color: black;
+    color: blue;
+}
+
+
+.homepage {
+    text-align: left;
+    margin: 0;
+    height: 120px;
+    font-size: 5em;
+    background-color: #ACBEC6;
+    color: white;
+}
+
+.webad1 {
+    background-color:lightgrey;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    padding:3px;
+    border:2px white solid;
+    border-radius: 10px;
+}
+
+.email , .dc , .news  {
+    display: flex;
+    flex-flow: column;
+    background-color: lightgray;
+}
+
+.webad2 {
+    background-color:lightgrey;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    padding:0px;
+    border: 2px white solid;
+    border-radius: 10px;
+}
+
+.movies , .jobs , .companies {
+    display: flex;
+    flex-flow: column;
+   
+    justify-content: space-between;
+    
+}

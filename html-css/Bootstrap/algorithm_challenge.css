@@ -1,0 +1,72 @@
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+  }
+
+.rectangle {
+    width: 40%;
+    height: 0;
+    border-bottom: 100px solid blue;
+  }
+
+.square {
+    width: 40%;
+    height: 0;
+    border-bottom: 100px solid pink;
+  }
+
+.oval {
+    width: 60px;
+    height: 5px;
+    border-radius: 100%;
+    border-bottom: 100px solid green;
+  }
+  
+  .circle {
+    border-radius: 100%;
+    border-bottom: 100px solid yellow;
+  }
+
+  .triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid;
+    transform: rotate(180deg);
+  }
+
+  .triangle-left {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid gray;
+    transform: rotate(270deg);
+  }
+
+  .trapezoid {
+    width: 20%;
+    height: 100%;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid peru;
+  }
+
+  .right-triangle {
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom:100px greenyellow solid;
+  }
+
+  .rhombus {
+    width: 10;
+    height: 0;
+    border-bottom: 100px solid pink;
+    transform: rotate(45deg);
+  }

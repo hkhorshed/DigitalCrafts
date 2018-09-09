@@ -1,0 +1,41 @@
+header {
+    width: 100%;
+    background-color: lightblue;
+    text-align: center;
+
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: lightskyblue;
+    justify-content: center;
+    /* align-items: flex-start; */
+}
+
+.sidebar {  
+    width: 300px;
+    height: 550px;
+    background-color: red;
+    margin: 30px;
+    padding: 50px; 
+    align-self: center;
+    
+
+}
+
+.content {
+    flex-grow: 1;
+    height: 300px;
+    background-color: red;
+    margin: 30px;
+    padding: 50px;
+    align-self: baseline;
+}
+
+footer {
+    width: 100%;
+    background-color: lightblue;
+    text-align: center;
+}

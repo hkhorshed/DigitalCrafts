@@ -1,0 +1,24 @@
+.modal-dialog {
+    width: 500px;
+    position: absolute;
+    left: 35%;
+    border: 5px solid black;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+
+}
+
+.modal-header {
+    background-color: gray;
+    width: 92%;
+    color: white;
+    padding: 20px;
+}
+
+
+.modal-buttons {
+    align-self: flex-end;
+    width: 25%;
+}

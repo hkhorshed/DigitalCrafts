@@ -1,0 +1,26 @@
+body {
+    margin: 0px;
+}
+
+.column_1 {
+    width: 20%;
+    left: 0%;
+    background-color:gray;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 50px;
+}
+
+.column_2 {
+    width: 80%;
+    left: 20%;
+    background-color: aqua;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    line-height:100vh;
+    font-size: 50px;
+}
+

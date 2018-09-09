@@ -1,0 +1,40 @@
+header {
+    background-color: green;
+    width:100%;
+    margin:0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+body {
+    margin: 0px;
+}
+.side-bar{
+    background-color: gray;
+    float:left;
+    width:15%;
+    height:100%;
+}
+
+.maincontent{
+    background-color: red;
+    float: left;
+    width:85%;
+    height:100%;
+    
+}
+
+footer{
+    background-color: blue;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.side-bar, .maincontent{
+    height: 600px
+}
+
