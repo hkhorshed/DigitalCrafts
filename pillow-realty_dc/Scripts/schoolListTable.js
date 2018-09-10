@@ -1,6 +1,13 @@
 $.getJSON('https://code.org/schools.json', function (data) {
     console.log(data);
 
+
+
+
+    // This is obtaining the information from a URL that has a page in JSON format. Variables are being assigned to the keys through
+    //  a  for loop to iterate through each element and group the information accordingly to placed in a table which is shown below
+    //  in the function "searchFunction()".
+
     for (i = 0; i <= data.schools.length; i++) {
         var name = data.schools[i].name,
             levels = data.schools[i].levels[i],
@@ -26,6 +33,9 @@ $.getJSON('https://code.org/schools.json', function (data) {
     }
 
 });
+
+// This searchFunction is the same concept as the housetable.js function. The table is being made on a certain set of parameters
+// for the columns. However, the function allows the table to be filtered in a dynamic way as the user si typing in the search input.
 
 function searchFunction() {
     var input, filter, table, tr, td, i;

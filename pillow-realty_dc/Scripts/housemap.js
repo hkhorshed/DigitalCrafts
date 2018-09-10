@@ -16,14 +16,14 @@ $('#subBtn').on('click', function (e) {
     e.preventDefault();
     $('#t2').find("tr:gt(0)").remove();
     locations.length = 0;
-    // console.log('help'); 
+
+
     // getting the API data from zillow
     var city = $("#cityselect").val();
     var state = $("#stateselect").val();
     $.get('http://www.zillow.com/webservice/GetRegionChildren.htm?zws-id=X1-ZWz18fvjq3ltsb_6ttia&state=' + state + '&city=' + city + '&childtype=neighborhood')
         .done(function (response) {
             myFunction(response);
-            // console.log(response);
 
         })
 
@@ -32,7 +32,6 @@ $('#subBtn').on('click', function (e) {
         })
 
 
-    // })
 
     function myFunction(response) {
         var $xmlResponse = $(response);
@@ -76,7 +75,6 @@ $('#subBtn').on('click', function (e) {
             var x = document.getElementById("floating-panel");
             x.style.display = "block";
 
-            // smoothZoom(map, 11, map.getZoom());
             var icon = {
                 url: "/Images/homeicon.png", // url
                 scaledSize: new google.maps.Size(30, 30), // scaled size
@@ -104,7 +102,6 @@ $('#subBtn').on('click', function (e) {
 
             for (i = 0; i < 16; i++) {
                 table.append('<tr><td>' + locations[i].title + '</td><td>$' + locations[i].Description + '</td></tr>');
-                // console.log("end: " + i);
                 $('#t2').find("tr:gt(16)").remove();
             }
         }
@@ -118,7 +115,6 @@ $('#subBtn').on('click', function (e) {
 
             for (i = 0; i < 16; i++) {
                 table.append('<tr><td>' + locations[i].title + '</td><td>' + locations[i].Description + '</td></tr>');
-                // console.log("end: " + i);
                 $('#t2').find("tr:gt(16)").remove();
             }
         }
@@ -135,7 +131,7 @@ $('#subBtn').on('click', function (e) {
 
     }
 
-    // console.log();
+
 
 
 })

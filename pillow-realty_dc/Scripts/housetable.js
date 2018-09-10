@@ -3,6 +3,11 @@ $('#subBtn').on('click', function (e) {
     $('#myTable').empty();
     var city = $("#cityselect").val();
     var state = $("#stateselect").val();
+
+
+
+
+    // Variables have been defined above, and not the information is called using the ".get" to obtain the Zillow API
     $.get('http://www.zillow.com/webservice/GetRegionChildren.htm?zws-id=X1-ZWz18fvjq3ltsb_6ttia&state=' + state + '&city=' + city + '&childtype=neighborhood')
         .done(function (response) {
             myFunction(response);
@@ -15,7 +20,8 @@ $('#subBtn').on('click', function (e) {
         })
 
 
-    // })
+// This function below is assigning which piece of the XML file is going to go to which column in the table being generated.
+// This function also allows the table to filter the information based on what the user is typing.
 
     function myFunction(response) {
         var $xmlResponse = $(response);
@@ -38,11 +44,10 @@ $('#subBtn').on('click', function (e) {
         })
     }
 
-    // console.log();
 
 
 
-    // });
+  
 
 });
 

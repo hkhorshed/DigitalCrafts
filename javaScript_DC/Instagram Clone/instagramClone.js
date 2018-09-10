@@ -5,6 +5,13 @@ var imageSelection = "[data-target]";
 var navItems = document.querySelectorAll(navigationSelection);
 var imgTarget = document.querySelector(imageSelection);
 
+
+
+
+// There are three pictures that already exist in the thumbnail
+// This function assigns a target where each picture will be shown everytime the carousel 
+// is picked.
+
 navItems.forEach(function (nav) {
   nav.addEventListener('click', function (event) {
     event.preventDefault();
