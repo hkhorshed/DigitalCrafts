@@ -1,21 +1,22 @@
 import React from 'react';
 
-class ContactAdd extends React.Component {
+class ContactEdit extends React.Component {
 
     constructor() {
         super();
         this.state = {
-            contact: {}
+            editedContact: {},
+            hidden: true
         }
     }
 
-    addContact(event) {
+    edited(event) {
         event.preventDefault();
         if (this.refs.name.value === '') {
             alert('Sorry, the name cannot be empty.')
         } else {
             this.setState({
-                contact: {
+                editedContact: {
                     name: this.refs.name.value,
                     number: this.refs.cellNumber.value,
                     email: this.refs.email.value,
@@ -26,53 +27,46 @@ class ContactAdd extends React.Component {
                 }
             },
                 function () {
-                    this.props.newContact(this.state.contact)
-                    this.refs.name.value = ""
-                    this.refs.cellNumber.value = ""
-                    this.refs.email.value = ""
-                    this.refs.address.value = ""
-                    this.refs.city.value = ""
-                    this.refs.state.value = ""
-                    this.refs.postal.value = ""
+                    this.props.editedContact(this.state.editedContact)
                 }
             );
         }
     }
 
-
     render() {
+
         return (
             <div>
-                <form onSubmit={this.addContact.bind(this)}>
+                <form onSubmit={this.edited.bind(this)}>
                     <div>Name:
-                        <input type='text' ref='name' />
+                        <input type='text' ref='name' placeholder={this.props.contact.name} />
                     </div>
                     <div>Number:
-                        <input type='text' ref='cellNumber' />
+                        <input type='text' ref='cellNumber' placeholder={this.props.contact.cellNumber} />
                     </div>
                     <div>Email:
-                        <input type='text' ref='email' />
+                        <input type='text' ref='email' placeholder={this.props.contact.email} />
                     </div>
                     <div>Address:
-                        <input type='text' ref='address' />
+                        <input type='text' ref='address' placeholder={this.props.contact.address} />
                     </div>
                     <div>City:
-                        <input type='text' ref='city' />
+                        <input type='text' ref='city' placeholder={this.props.contact.city} />
                     </div>
                     <div>State:
-                        <input type='text' ref='state' />
+                        <input type='text' ref='state' placeholder={this.props.contact.state} />
                     </div>
                     <div>Zip Code:
-                        <input type='text' ref='postal' />
+                        <input type='text' ref='postal' placeholder={this.props.contact.postal} />
                     </div>
                     <div>
-                        <input type='submit' value='Add' />
+                        <input type='submit' value='Save Changes' />
                     </div>
                 </form>
             </div>
         );
     }
 
-} 
+}
 
-export default ContactAdd;
+export default ContactEdit;
